@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:id="@+id/MyLayout"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="295dp"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/player_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/player_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal" />
+
+    <ImageView
+        android:id="@+id/bt_rewind"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginBottom="193dp"
+        android:background="@drawable/rounded"
+        android:backgroundTint="@color/black"
+
+        android:src="@drawable/rewind" />
+
+    <ImageView
+        android:id="@+id/bt_play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="194dp"
+        android:layout_toStartOf="@+id/bt_fastforward"
+        android:layout_toEndOf="@+id/bt_rewind"
+        android:background="@drawable/rounded"
+        android:src="@drawable/play_arrow" />
+
+    <ImageView
+        android:id="@+id/bt_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="195dp"
+        android:src="@drawable/pause"
+        android:background="@drawable/rounded"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/bt_fastforward"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="191dp"
+        android:background="@drawable/rounded"
+
+        android:src="@drawable/fastforward" />
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginBottom="84dp"
+        android:layout_toEndOf="@+id/menu"
+        android:backgroundTint="@color/black"
+        android:text="info" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginBottom="83dp"
+        android:backgroundTint="@color/black"
+        android:text="menu" />
+
+    <TextView
+        android:id="@+id/textInfo"
+        android:layout_width="377dp"
+        android:layout_height="337dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="373dp"
+        android:textColor="@color/black"
+        android:text="Singer:- Post Malone \n\nInfo:- He is an American rapper, singer, and songwriter. Known for his variegated vocal styles, Malone has gained acclaim for blending genres and subgenres of hip hop, pop, RnB, and trap."
+        android:textSize="24sp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
